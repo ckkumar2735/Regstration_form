@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Tech Student Registration Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">B.Tech Student Registration Form</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <input type="text" class="form-control" id="fullName" placeholder=" " required>
+                <label for="fullName">Full Name</label>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder=" " required>
+                <label for="email">Email address</label>
+            </div>
+            <div class="form-group">
+                <input type="tel" class="form-control" id="phone" placeholder=" " required>
+                <label for="phone">Phone Number</label>
+            </div>
+            <div class="form-group">
+                <input type="date" class="form-control" id="dob" placeholder=" " required>
+                <label for="dob">Date of Birth</label>
+            </div>
+            <div class="form-group">
+                <select class="form-control" id="branch" required>
+                    <option value="" disabled selected>Select your branch</option>
+                    <option value="CSE">Computer Science Engineering</option>
+                    <option value="ECE">Electronics and Communication Engineering</option>
+                    <option value="ME">Mechanical Engineering</option>
+                    <option value="CE">Civil Engineering</option>
+                    <option value="EE">Electrical Engineering</option>
+                </select>
+                <label for="branch">Branch</label>
+            </div>
+            <div class="form-group">
+                <select class="form-control" id="semester" required>
+                    <option value="" disabled selected>Select your semester</option>
+                    <option value="1">1st Semester</option>
+                    <option value="2">2nd Semester</option>
+                    <option value="3">3rd Semester</option>
+                    <option value="4">4th Semester</option>
+                    <option value="5">5th Semester</option>
+                    <option value="6">6th Semester</option>
+                    <option value="7">7th Semester</option>
+                    <option value="8">8th Semester</option>
+                </select>
+                <label for="semester">Current Semester</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
